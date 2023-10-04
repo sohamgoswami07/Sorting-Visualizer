@@ -17,6 +17,7 @@ https://sohamgoswami07.github.io/sorting-visualizer/
 # Creator :
 Created and developed by Soham Goswami..
 
-# For anny kind of problem or query feel free to connect in :
-LinkedIn :
-Instagram : 
+# For any kind of coding issue or queries, feel free to connect in :
+LinkedIn : https://www.linkedin.com/in/soham-goswami-2a5b84143/
+
+Thaks for showing interest..
