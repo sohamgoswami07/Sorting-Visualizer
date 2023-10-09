@@ -1,27 +1,36 @@
+function algoDetails(evt, algorithms) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+  
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(algorithms).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
 // Accessing DOM elements 
-
 const sortingVisualizerDOM = document.getElementById("sorting-visualizer-container__bar");
-
 const arrayRangeSliderDOM = document.querySelector(".array-range-slider");
-
 const arraySizeTextDOM = document.querySelector(".array-range-slider-label");
-
 const speedTextDOM = document.querySelector('.speed-range-slider-label');
-
 const sortingBar = document.getElementsByClassName("sorting-bar");
-
 const optionBtnDOM = document.querySelector(".sorting-option-btn");
-
 const sortingStartBtnDOM = document.querySelector(".start-sorting-btn");
-
 const generateNewArrayBtn =  document.querySelector('.generate-array-btn');
-
 const speedRangeSliderDOM = document.querySelector('.speed-range-slider');
-
 const barDirectionBtn =  document.querySelector('.bar-direction-btn');
-
 const myToast =  document.querySelector('.my-toast');
-
 const SORTING_OPTION = ["Bubble Sort", "Selection Sort", "Merge Sort"];
 
 const COLORS = {
@@ -86,26 +95,18 @@ speedRangeSliderDOM.addEventListener("input", (event) => {
   setGlobalStates.speed = speed;
 });
 
-
 // Generating new array listner 
-
 generateNewArrayBtn.addEventListener('click',()=>{
     generateNewArray(setGlobalStates.arraySize);
 });
 
-
-
 // sorting option value, by default 1 it's means bubble sort
-
 let selectedSortIngOption = 1;
 
 // it's change the sorting algorithms
 optionBtnDOM.addEventListener("click", () => {
   if (selectedSortIngOption == SORTING_OPTION.length) selectedSortIngOption = 0;
-  optionBtnDOM.innerHTML = `${SORTING_OPTION[selectedSortIngOption++]}
-          <span class="material-icons">
-          expand_more
-          </span>`;
+  optionBtnDOM.innerHTML = SORTING_OPTION[selectedSortIngOption++]
 });
 
 // Helper method
@@ -166,14 +167,10 @@ const selectionSort = async () => {
 
  
   for (let i = 0; i < sortingBar.length - 1 ; i++) {
-
       for (let j = i + 1; j < sortingBar.length; j++) {
-
-  
-          if (getValue(sortingBar[i]) > getValue(sortingBar[j])){
-              await swap(sortingBar[i],sortingBar[j]);
-          }
-      
+          if (getValue(sortingBar[i]) > getValue(sortingBar[j])) {
+            await swap(sortingBar[i],sortingBar[j]);
+          }      
       }
      sortedNumber(sortingBar[i])
   }
@@ -192,7 +189,7 @@ const mergeSort = async (arr) => {
   const leftResult = await mergeSort(left);
   const rightResult = await mergeSort(right);
   const result = await merge(leftResult, rightResult);
-  //   sortingArrayColor(result);
+  // sortingArrayColor(result);
   return result;
 };
 
@@ -215,7 +212,6 @@ const merge = async (leftNodes, rightNodes) => {
     await appendNode(node);
     results.push(node);
   }
-
   while (rightNodes.length) {
     node = rightNodes.shift();
     await appendNode(node);
@@ -283,3 +279,24 @@ const executeSelectedFunction = async () =>{
 
 // Default array generate
 generateNewArray(50);
+
+function sortingType(evt, sortings) {
+  // Declare all variables
+  var i, sorting_tab, tablinks;
+
+  // Get all elements with class="sorting-tab" and hide them
+  sorting_tab = document.getElementsByClassName("sorting-tab");
+  for (i = 0; i < sorting_tab.length; i++) {
+    sorting_tab[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(sortings).style.display = "block";
+  evt.currentTarget.className += " active";
+}
