@@ -4,6 +4,7 @@ Programming language's concept array sorting. This is the visualizer effect of t
 # Language are used :
 HTML, CSS and JavaScript
 (All sorting algorithms are written in JavaScript)
+Some resources are collected from GeeksforGeeks (https://www.geeksforgeeks.org/)
 
 # For now implemented algorithm are :
   1. Bubble Sort
