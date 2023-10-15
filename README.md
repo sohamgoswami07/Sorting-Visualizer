@@ -1,7 +1,7 @@
-![Screenshot (12)](https://github.com/sohamgoswami07/sorting-visualizer/assets/65434681/6abf5b3f-7c65-441b-919e-b5d73ea39e69)
-
 # Sorting Visualizer
 Programming language's concept array sorting. This is the visualizer effect of that array sorting. You can get an visual idea how the sorting algorithms works..
+
+![Screenshot (12)](https://github.com/sohamgoswami07/sorting-visualizer/assets/65434681/74f65c02-0a5d-49d7-ab4b-c64a5759de1e)
 
 # Language are used
 HTML, CSS and JavaScript  
