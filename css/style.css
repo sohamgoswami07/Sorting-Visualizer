@@ -59,16 +59,10 @@ body {
   animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
 
-.sorting-details {
-  display: none;
-  padding: 25px;
-  animation: fadeEffect 1s; /* Fading effect takes 1 second */
-}
-
 .sorting-tab {
   position: absolute;
   display: none;
-  padding: 25px;
+  padding: 50px;
   animation: fadeEffect 1s; /* Fading effect takes 1 second */
   height: 80%;
   width: auto;
