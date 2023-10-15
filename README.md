@@ -1,3 +1,5 @@
+![Screenshot (12)](https://github.com/sohamgoswami07/sorting-visualizer/assets/65434681/6abf5b3f-7c65-441b-919e-b5d73ea39e69)
+
 # Sorting Visualizer
 Programming language's concept array sorting. This is the visualizer effect of that array sorting. You can get an visual idea how the sorting algorithms works..
 
@@ -7,8 +9,7 @@ HTML, CSS and JavaScript
 Some resources are collected from GeeksforGeeks (https://www.geeksforgeeks.org/)
 
 # For now implemented algorithm are
-  1. Bubble Sort![Screenshot (12)](https://github.com/sohamgoswami07/sorting-visualizer/assets/65434681/ec4180ac-6f72-4246-8b19-bad1db64b814)
-
+  1. Bubble Sort
   2. Selection Sort
   3. Merge Sort  
   more soon...
