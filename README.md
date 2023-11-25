@@ -1,5 +1,5 @@
 # Sorting Visualizer
-Programming language's concept array sorting. This is the visualizer effect of that array sorting. You can get an visual idea how the sorting algorithms works..
+In programming language's array sorting, there are three types of sorting algorithms Bubble sort, Selection sort and Merge sort. In this sorting visualizer you can get an visual idea how the sorting algorithms works..
 
 ![Screenshot (12)](https://github.com/sohamgoswami07/sorting-visualizer/assets/65434681/74f65c02-0a5d-49d7-ab4b-c64a5759de1e)
 
