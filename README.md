@@ -15,7 +15,7 @@ Some resources are collected from GeeksforGeeks (https://www.geeksforgeeks.org/)
   more soon...
   
 # Live at
-https://sohamgoswami07.github.io/sorting-visualizer/
+https://sohamgoswami07.github.io/Sorting-Visualizer/
 
 # Creator
 Created and developed by Soham Goswami..
